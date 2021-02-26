@@ -1,0 +1,74 @@
+﻿@model Passion_225.Models.Pet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Pet Details</h2>
+
+<div>
+    <h4>Pet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.DepartmentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.DepartmentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetAge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetWeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetWeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetHasPic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetHasPic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PicExtension)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PicExtension)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PetID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
